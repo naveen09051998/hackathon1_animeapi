@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime API</title>
+    <style>
+        
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: stretch;
+}
+
+ * {
+    flex-basis: 18rem;
+    flex-shrink: 0;
+}
+
+
+body{
+    background-image: url("anime.jpg");
+    background-size: cover;
+    
+}
+
+#searchContainer{
+    padding: 15px;
+    position: absolute;
+    top:0;
+    right: 0;
+    text-align: center;
+}
+
+#searchContainer input{
+    width: 200px;
+    color: white;
+    
+}
+
+#searchContainer button{
+    background-color: rgb(1,159,198);
+    width: 75px;
+}
+
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <div id = "searchContainer">
+        <input class = "searchContainer" type="text" placeholder="Search Anime" id = "searchInput">
+        <button class= "searchContainer" class ="searchBtn_class" id="searchBtn">Search</button>
+        </div>
+        <!-- 
+            this code is for with out using DOM elements.
+        <div class = "container">
+            <div id="search-results" class="row">
+           -->
+           
+            <div class = "container">
+                <div id="row" class="row">
+                    <!---
+                     <div class = "col-4">
+                       <div class="card">
+                            <div class="card-image">
+                             <img src="" alt="image">
+                            </div>
+                            <div class="card-body">
+                             <h4 class = "card-type"> </h4><br>
+                             <p class="card-rating"></p>  
+                             <p class="card-from"></p>
+                             <p class="card-to"></p>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+            
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
